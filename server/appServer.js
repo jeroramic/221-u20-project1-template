@@ -1,3 +1,4 @@
+const feedController = require('./controller/feedController');
 const express = require('express')
 const app = express();
 app.use(express.static('client/public'));
@@ -9,5 +10,10 @@ app.get('/feed', function(req, res) {
     res.sendFile('feed.html', {root: './client/views'})
 })
 
+let personController = require('./controller/feedController');
+
+app.route('/api/feedItems')
+    .get(feedController.getAllFeedItems)
+//written in part by a very tired 15yo
 
 app.listen(1337, () => console.log('Listening on port 1337.'))

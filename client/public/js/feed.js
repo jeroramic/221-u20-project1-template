@@ -3,7 +3,7 @@ function checkKeyPress(e) {
       e.preventDefault();
     goToLocation('/feed');
   }
-}
+}//written in part by a very tired 15yo
 window.onload = function() {
   document.body.setAttribute("tabindex", "0");
   document.body.focus();

@@ -1,7 +1,7 @@
 function gotolocation(path){
   window.locationref= path;
 }
-
+//written in part by a very tired 15yo
 
 /*
  * Check ascii code for spacebar and call goToLocation in global to change URL
